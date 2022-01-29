@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:padding="10dp"
+        android:id="@+id/leftPinIconSearch"/>
+    <TextView
+        android:id="@+id/eventInfoSearch"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_toRightOf="@+id/leftPinIconSearch"
+        android:layout_toEndOf="@+id/leftPinIconSearch"
+        android:gravity="center_vertical"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:lineSpacingExtra="8dp"
+        android:textSize="14sp"
+        tools:text="Event info goes here\n and here too (9999)"/>
+
+    <View
+        android:layout_below="@+id/leftPinIconSearch"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@android:color/darker_gray"/>
+</RelativeLayout>
